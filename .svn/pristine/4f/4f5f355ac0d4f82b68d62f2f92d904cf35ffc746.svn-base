@@ -1,0 +1,37 @@
+/*
+SQLyog v10.2 
+MySQL - 5.5.40 : Database - zy_2016_ozb
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`zy_2016_ozb` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `zy_2016_ozb`;
+
+/*Table structure for table `zy_country` */
+
+DROP TABLE IF EXISTS `zy_country`;
+
+CREATE TABLE `zy_country` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+
+/*Data for the table `zy_country` */
+
+insert  into `zy_country`(`id`,`name`,`logo`) values (1,'法国','static/images/fg.png'),(2,'罗马尼亚','static/images/lmny.png'),(3,'阿尔巴尼亚','static/images/aebny.png'),(4,'瑞士','static/images/rs.png'),(5,'英格兰','static/images/ygl.png'),(6,'俄罗斯','static/images/els.png'),(7,'威尔士','static/images/wes.png'),(8,'斯洛伐克','static/images/slfk.png'),(9,'德国','static/images/dg.png'),(10,'乌克兰','static/images/wkl.png'),(11,'波兰','static/images/bl.png'),(12,'北爱尔兰','static/images/bael.png'),(13,'西班牙','static/images/xby.png'),(14,'捷克','static/images/jk.png'),(15,'土耳其','static/images/teq.png'),(16,'克罗地亚','static/images/kldy.png'),(17,'比利时','static/images/bls.png'),(18,'意大利','static/images/ydl.png'),(19,'爱尔兰','static/images/ael.png'),(20,'瑞典','static/images/rd.png'),(21,'葡萄牙','static/images/pty.png'),(22,'冰岛','static/images/bd.png'),(23,'奥地利','static/images/adl.png'),(24,'匈牙利','static/images/xyl.png');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

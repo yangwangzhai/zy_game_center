@@ -1,0 +1,22 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "noCache":true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d"],
+
+    "jsList" : [
+        "static/gameroom/redrain/src/resource.js",
+        "static/gameroom/redrain/src/StartScene.js",
+        "static/gameroom/redrain/src/PlayScene.js",
+        "static/gameroom/redrain/src/SushiSprite.js",
+        "static/gameroom/redrain/src/HeroSprite.js",
+        "static/gameroom/redrain/src/TipsScene.js"
+    ]
+}
